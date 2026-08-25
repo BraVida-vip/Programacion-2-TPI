@@ -1,8 +1,8 @@
 ///Ejercicio: hacer una clase de nombre clsCadena, que permita trabajar con cadenas de caracteres.
-///Cada objeto clsCadena debe ajustar su tamaño al estrictamente necesario.
+///Cada objeto clsCadena debe ajustar su tamaÃ±o al estrictamente necesario.
 ///Autor:DEK
 ///Fecha:
-///Comentario:
+///Comentario:ninguno
 
 # include<iostream>
 # include<cstring>///string.h contiene las funciones para trabajar con vectores de char
@@ -37,7 +37,7 @@ clsCadena::clsCadena(const char *cad){
     pCadena[tam-1]='\0';
 }
 ///this es un puntero que existe SOLO dentro de la clase
-///y que contiene la dirección del objeto que llama al método.
+///y que contiene la direcciÃ³n del objeto que llama al mÃ©todo.
 ///Se dice que es un puntero oculto
 
 void clsCadena::MostrarDireccion(){
