@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1793227582 source:c:\users\alumno\desktop\progra 2\proyectos\juego-torres\defensa.cpp
+	"Defensa.h"
+
+1793227607 c:\users\alumno\desktop\progra 2\proyectos\juego-torres\defensa.h
+	<string>
+
+1793227865 source:c:\users\alumno\desktop\progra 2\proyectos\juego-torres\main.cpp
+	<iostream>
+	"Partida.h"
+
+1793227778 c:\users\alumno\desktop\progra 2\proyectos\juego-torres\partida.h
+
+1793227790 source:c:\users\alumno\desktop\progra 2\proyectos\juego-torres\partida.cpp
+	"Partida.h"
+
+1793227692 source:c:\users\alumno\desktop\progra 2\proyectos\juego-torres\enemigos.cpp
+	"Enemigos.h"
+
+1793227546 c:\users\alumno\desktop\progra 2\proyectos\juego-torres\enemigos.h
+	<string>
+
