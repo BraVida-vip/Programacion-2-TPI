@@ -6,3 +6,10 @@ void Fortaleza::reparar() { resistencia = resistenciaMaxima; }
 int Fortaleza::getResistencia() const { return resistencia; }
 int Fortaleza::getResistenciaMaxima() const { return resistenciaMaxima; }
 bool Fortaleza::estaDestruida() const { return resistencia <= 0; }
+void Fortaleza::aumentarResistencia(int cantidad) {
+
+    if (cantidad > 0) {
+        resistenciaMaxima += cantidad;
+        resistencia += cantidad;
+    }
+}
