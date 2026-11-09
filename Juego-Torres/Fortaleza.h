@@ -10,6 +10,7 @@ public:
     void recibirDano(int cantidad);
     void reparar();
     int getResistencia() const;
+       void aumentarResistencia(int cantidad);
     int getResistenciaMaxima() const;
     bool estaDestruida() const;
 };
