@@ -1,20 +1,31 @@
 #ifndef JUGADOR_H
 #define JUGADOR_H
-#include <string>
+#include <cstring>
+
 class Jugador {
 private:
-    int idJugador, puntajeMaximo, nivelMaximo, partidasJugadas;
-    std::string nombre;
-    bool habilitado;
+    int  idJugador;
+    char nombre[30];
+    int  puntajeMaximo;
+    int  nivelMaximo;
+    int  partidasJugadas;
+    bool eliminado;
 public:
     Jugador();
-    Jugador(int id, const std::string& nombre);
-    void actualizarEstadisticas(int puntaje);
-    int getIdJugador() const;
-    std::string getNombre() const;
-    int getPuntajeMaximo() const;
-    int getPartidasJugadas() const;
-    bool estaHabilitado() const;
-    void setHabilitado(bool valor);
+    Jugador(int id, const char* nombre);
+
+    void actualizarEstadisticas(int puntaje, int nivel);
+    void mostrar() const;
+
+    int  getIdJugador() const;
+    const char* getNombre() const;
+    int  getPuntajeMaximo() const;
+    int  getNivelMaximo() const;
+    int  getPartidasJugadas() const;
+    bool getEliminado() const;
+
+    void setNombre(const char* n);
+    void setEliminado(bool valor);
 };
 #endif
+
