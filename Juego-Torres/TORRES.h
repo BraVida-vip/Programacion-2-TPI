@@ -1,12 +1,13 @@
 #ifndef TORRES_H_INCLUDED
 #define TORRES_H_INCLUDED
 #include "Defensa.h"
+using namespace std;
 class TorreArquera : public Defensa {
 public:
     TorreArquera();
     explicit TorreArquera(int id);
     void atacar() override;
-    std::string getTipo() const override;
+    string getTipo() const override;
     void dispararRapido();
 };
 
@@ -15,7 +16,7 @@ public:
     TorreFuego();
     explicit TorreFuego(int id);
     void atacar() override;
-    std::string getTipo() const override;
+    string getTipo() const override;
     void lanzarArea();
 };
 
@@ -24,7 +25,7 @@ public:
     TorreHielo();
     explicit TorreHielo(int id);
     void atacar() override;
-    std::string getTipo() const override;
+    string getTipo() const override;
     void ralentizarEnemigo();
 };
 #endif
