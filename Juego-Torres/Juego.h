@@ -6,9 +6,11 @@ class Juego {
 private:
     Jugador jugadorActual;
     Partida partidaActual;
+    void mostrarMenu();
+    void mostrarEstadisticas();
+    void mostrarCreditos();
 public:
     Juego();
-    void mostrarMenu();
     void iniciarPartida();
     void ejecutar();
     Jugador& getJugadorActual();
