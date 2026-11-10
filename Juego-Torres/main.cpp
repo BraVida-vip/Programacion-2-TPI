@@ -1,10 +1,13 @@
 #include <iostream>
 #include "Partida.h"
+#include "IngresoJugador.h"
 
 using namespace std;
 
 int main()
 {
+    Jugador jugador = ingresarJugador();
+
     Partida partida;
 
     while (partida.getDia() <= 7 && partida.getResistencia() > 0)
@@ -13,7 +16,7 @@ int main()
         cout << "       DIA " << partida.getDia() << endl;
         cout << "==========================" << endl;
 
-        cout << "Oro: " << partida.getOro() << endl;
+        cout << "Oro: " << partida.getDinero() << endl;
         cout << "Castillo: " << partida.getResistencia() << endl;
 
         cout << "\nComienza la oleada "
@@ -48,7 +51,6 @@ int main()
 
     return 0;
 }
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 /**
 #include <iostream>
 #include <thread>
@@ -120,4 +122,4 @@ mostrarMenu();
 return 0;
 
 }
-*//
+*/
