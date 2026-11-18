@@ -14,5 +14,5 @@ std::string Muralla::getTipo() const {
 }
 
 void Muralla::aumentarResistencia(Fortaleza& fortaleza) {
-    fortaleza.aumentarResistencia(50);
+    fortaleza.aumentarResistencia(250);
 }
