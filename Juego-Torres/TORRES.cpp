@@ -3,9 +3,9 @@
 
 using namespace std;
 // TORRE ARQUERA
-TorreArquera::TorreArquera(): Defensa(0, "TorreArquera", 0, 10, 2, 1.0f, 50, 1) {}
+TorreArquera::TorreArquera(): Defensa(0, "TorreArquera", 0, 400, 2, 2.0f, 50, 1) {}
 
-TorreArquera::TorreArquera(int id): Defensa(id, "TorreArquera", 0, 10, 2, 1.0f, 50, 1) {}
+TorreArquera::TorreArquera(int id): Defensa(id, "TorreArquera", 0, 400, 2, 2.0f, 50, 1) {}
 
 void TorreArquera::atacar() {}
 
@@ -18,10 +18,10 @@ void TorreArquera::dispararRapido() {
 
 // TORRE FUEGO
 TorreFuego::TorreFuego()
-    : Defensa(0, "TorreFuego", 1, 20, 3, 0.5f, 80, 1) {}
+    : Defensa(0, "TorreFuego", 1, 500, 3, 0.7f, 80, 1) {}
 
 TorreFuego::TorreFuego(int id)
-    : Defensa(id, "TorreFuego", 1, 20, 3, 0.5f, 80, 1) {}
+    : Defensa(id, "TorreFuego", 1, 500, 3, 0.7f, 80, 1) {}
 
 void TorreFuego::atacar() {}
 
@@ -33,9 +33,9 @@ void TorreFuego::lanzarArea() {
 
 
 // TORRE HIELO
-TorreHielo::TorreHielo():Defensa(0, "TorreHielo", 2, 5, 3, 0.7f, 70, 1) {}
+TorreHielo::TorreHielo():Defensa(0, "TorreHielo", 2, 100, 3, 1.0f, 70, 1) {}
 
-TorreHielo::TorreHielo(int id): Defensa(id, "TorreHielo", 2, 5, 3, 0.7f, 70, 1) {}
+TorreHielo::TorreHielo(int id): Defensa(id, "TorreHielo", 2, 100, 3, 1.0f, 70, 1) {}
 
 void TorreHielo::atacar() {}
 
