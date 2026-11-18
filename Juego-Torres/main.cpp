@@ -90,8 +90,11 @@ void mejorarDefensa(Partida& partida) {
     int n;
     cin >> n;
     if (n >= 1 && n <= partida.getCantidadDefensas()) {
-        partida.mejorarDefensa(n - 1);
-        cout << "Defensa mejorada." << endl;
+        if (partida.mejorarDefensa(n - 1)) {
+            cout << "Defensa mejorada." << endl;
+        } else {
+            cout << "No se pudo mejorar (oro insuficiente o nivel maximo)." << endl;
+        }
     }
 }
 
@@ -136,11 +139,10 @@ int main()
             case 2: mejorarDefensa(partida);   break;
             case 3: partida.verRecursos();     break;
             case 4:
-                if (partida.getDinero() >= 25) {
-                    partida.repararFortaleza();
-                    cout << "Fortaleza reparada (-25 oro)." << endl;
+                if (partida.repararFortaleza()) {
+                    cout << "Fortaleza reparada (-30 oro)." << endl;
                 } else {
-                    cout << "No alcanza el oro (necesitas 25)." << endl;
+                    cout << "No se puede reparar (necesitas 30 oro y la fortaleza danada)." << endl;
                 }
                 break;
             case 5: correrOleada(partida);     break;
