@@ -1,0 +1,306 @@
+# depslib dependency file v1.0
+1793227582 source:c:\users\alumno\desktop\progra 2\proyectos\juego-torres\defensa.cpp
+	"Defensa.h"
+
+1793227607 c:\users\alumno\desktop\progra 2\proyectos\juego-torres\defensa.h
+	<string>
+
+1793227865 source:c:\users\alumno\desktop\progra 2\proyectos\juego-torres\main.cpp
+	<iostream>
+	"Partida.h"
+
+1793227778 c:\users\alumno\desktop\progra 2\proyectos\juego-torres\partida.h
+
+1793227790 source:c:\users\alumno\desktop\progra 2\proyectos\juego-torres\partida.cpp
+	"Partida.h"
+
+1793227692 source:c:\users\alumno\desktop\progra 2\proyectos\juego-torres\enemigos.cpp
+	"Enemigos.h"
+
+1793227546 c:\users\alumno\desktop\progra 2\proyectos\juego-torres\enemigos.h
+	<string>
+
+1795040238 source:c:\users\mateo\documents\programacion 2 2026\tp final inegrador juego de torres\archivojugadores.cpp
+	"ArchivoJugadores.h"
+	<cstdio>
+	<cstring>
+	<cctype>
+
+1795040244 c:\users\mateo\documents\programacion 2 2026\tp final inegrador juego de torres\archivojugadores.h
+	"Jugador.h"
+
+1795040318 c:\users\mateo\documents\programacion 2 2026\tp final inegrador juego de torres\jugador.h
+	<cstring>
+
+1795040342 source:c:\users\mateo\documents\programacion 2 2026\tp final inegrador juego de torres\defensa.cpp
+	"Defensa.h"
+
+1795040346 c:\users\mateo\documents\programacion 2 2026\tp final inegrador juego de torres\defensa.h
+	<string>
+	<chrono>
+
+1795041864 source:c:\users\mateo\documents\programacion 2 2026\tp final inegrador juego de torres\defensacolocada.cpp
+	"DefensaColocada.h"
+
+1795041797 c:\users\mateo\documents\programacion 2 2026\tp final inegrador juego de torres\defensacolocada.h
+	"Defensa.h"
+
+1795040262 source:c:\users\mateo\documents\programacion 2 2026\tp final inegrador juego de torres\enemigo.cpp
+	"Enemigo.h"
+
+1795040266 c:\users\mateo\documents\programacion 2 2026\tp final inegrador juego de torres\enemigo.h
+	<string>
+	<chrono>
+
+1795040254 source:c:\users\mateo\documents\programacion 2 2026\tp final inegrador juego de torres\enemigos.cpp
+	"ENEMIGOS.h"
+
+1795040258 c:\users\mateo\documents\programacion 2 2026\tp final inegrador juego de torres\enemigos.h
+	"Enemigo.h"
+
+1795040269 source:c:\users\mateo\documents\programacion 2 2026\tp final inegrador juego de torres\evento.cpp
+	"Evento.h"
+
+1795040272 c:\users\mateo\documents\programacion 2 2026\tp final inegrador juego de torres\evento.h
+	<string>
+
+1795041797 source:c:\users\mateo\documents\programacion 2 2026\tp final inegrador juego de torres\fortaleza.cpp
+	"Fortaleza.h"
+
+1795041694 c:\users\mateo\documents\programacion 2 2026\tp final inegrador juego de torres\fortaleza.h
+
+1795040285 source:c:\users\mateo\documents\programacion 2 2026\tp final inegrador juego de torres\gestorarchivos.cpp
+	"GestorArchivos.h"
+	<fstream>
+
+1795040288 c:\users\mateo\documents\programacion 2 2026\tp final inegrador juego de torres\gestorarchivos.h
+	<string>
+	<vector>
+	"Jugador.h"
+	"Partida.h"
+	"Oleada.h"
+	"DefensaColocada.h"
+	"Enemigo.h"
+	"Evento.h"
+
+1795041864 c:\users\mateo\documents\programacion 2 2026\tp final inegrador juego de torres\partida.h
+	<string>
+	<vector>
+	<chrono>
+	"Fortaleza.h"
+	"DefensaColocada.h"
+	"Oleada.h"
+
+1795040332 c:\users\mateo\documents\programacion 2 2026\tp final inegrador juego de torres\oleada.h
+	<vector>
+
+1795040292 source:c:\users\mateo\documents\programacion 2 2026\tp final inegrador juego de torres\ingresojugador.cpp
+	"IngresoJugador.h"
+	"ArchivoJugadores.h"
+	<iostream>
+	<string>
+
+1795040295 c:\users\mateo\documents\programacion 2 2026\tp final inegrador juego de torres\ingresojugador.h
+	"Jugador.h"
+
+1795040307 source:c:\users\mateo\documents\programacion 2 2026\tp final inegrador juego de torres\juego (1).cpp
+	"Juego.h"
+	<iostream>
+
+1795040310 c:\users\mateo\documents\programacion 2 2026\tp final inegrador juego de torres\juego.h
+	"Jugador.h"
+	"Partida.h"
+
+1795040315 source:c:\users\mateo\documents\programacion 2 2026\tp final inegrador juego de torres\jugador.cpp
+	"Jugador.h"
+	<iostream>
+
+1795042670 source:c:\users\mateo\documents\programacion 2 2026\tp final inegrador juego de torres\main.cpp
+	<iostream>
+	<chrono>
+	<windows.h>
+	<unistd.h>
+	"Partida.h"
+	"IngresoJugador.h"
+	"ArchivoJugadores.h"
+	"TORRES.h"
+	"Muralla.h"
+	"ArchivoPartidas.h"
+
+1795040338 c:\users\mateo\documents\programacion 2 2026\tp final inegrador juego de torres\torres.h
+	"Defensa.h"
+
+1795040325 c:\users\mateo\documents\programacion 2 2026\tp final inegrador juego de torres\muralla.h
+	"Defensa.h"
+
+1795040321 source:c:\users\mateo\documents\programacion 2 2026\tp final inegrador juego de torres\muralla.cpp
+	"Muralla.h"
+	"Fortaleza.h"
+
+1795040329 source:c:\users\mateo\documents\programacion 2 2026\tp final inegrador juego de torres\oleada.cpp
+	"Oleada.h"
+	"Enemigo.h"
+	"ENEMIGOS.h"
+
+1795042670 source:c:\users\mateo\documents\programacion 2 2026\tp final inegrador juego de torres\partida.cpp
+	"Partida.h"
+	"Defensa.h"
+	"Enemigo.h"
+	"Muralla.h"
+	"ArchivoPartidas.h"
+	"TORRES.h"
+	<iostream>
+	<cmath>
+
+1795040335 source:c:\users\mateo\documents\programacion 2 2026\tp final inegrador juego de torres\torres.cpp
+	<iostream>
+	"TORRES.h"
+
+1795041591 source:c:\users\mateo\documents\programacion 2 2026\tp final inegrador juego de torres\archivopartidas.cpp
+	"ArchivoPartidas.h"
+	<fstream>
+
+1795041591 c:\users\mateo\documents\programacion 2 2026\tp final inegrador juego de torres\archivopartidas.h
+
+1795040238 source:c:\users\mateo\documents\programacion 2 2026\tp final integrador juego de torres\archivojugadores.cpp
+	"ArchivoJugadores.h"
+	<cstdio>
+	<cstring>
+	<cctype>
+
+1795040244 c:\users\mateo\documents\programacion 2 2026\tp final integrador juego de torres\archivojugadores.h
+	"Jugador.h"
+
+1795040318 c:\users\mateo\documents\programacion 2 2026\tp final integrador juego de torres\jugador.h
+	<cstring>
+
+1795041591 source:c:\users\mateo\documents\programacion 2 2026\tp final integrador juego de torres\archivopartidas.cpp
+	"ArchivoPartidas.h"
+	<fstream>
+
+1795041591 c:\users\mateo\documents\programacion 2 2026\tp final integrador juego de torres\archivopartidas.h
+
+1795040342 source:c:\users\mateo\documents\programacion 2 2026\tp final integrador juego de torres\defensa.cpp
+	"Defensa.h"
+
+1795040346 c:\users\mateo\documents\programacion 2 2026\tp final integrador juego de torres\defensa.h
+	<string>
+	<chrono>
+
+1795041864 source:c:\users\mateo\documents\programacion 2 2026\tp final integrador juego de torres\defensacolocada.cpp
+	"DefensaColocada.h"
+
+1795041797 c:\users\mateo\documents\programacion 2 2026\tp final integrador juego de torres\defensacolocada.h
+	"Defensa.h"
+
+1795040262 source:c:\users\mateo\documents\programacion 2 2026\tp final integrador juego de torres\enemigo.cpp
+	"Enemigo.h"
+
+1795040266 c:\users\mateo\documents\programacion 2 2026\tp final integrador juego de torres\enemigo.h
+	<string>
+	<chrono>
+
+1795040254 source:c:\users\mateo\documents\programacion 2 2026\tp final integrador juego de torres\enemigos.cpp
+	"ENEMIGOS.h"
+
+1795040258 c:\users\mateo\documents\programacion 2 2026\tp final integrador juego de torres\enemigos.h
+	"Enemigo.h"
+
+1795040269 source:c:\users\mateo\documents\programacion 2 2026\tp final integrador juego de torres\evento.cpp
+	"Evento.h"
+
+1795040272 c:\users\mateo\documents\programacion 2 2026\tp final integrador juego de torres\evento.h
+	<string>
+
+1795041797 source:c:\users\mateo\documents\programacion 2 2026\tp final integrador juego de torres\fortaleza.cpp
+	"Fortaleza.h"
+
+1795041694 c:\users\mateo\documents\programacion 2 2026\tp final integrador juego de torres\fortaleza.h
+
+1795040285 source:c:\users\mateo\documents\programacion 2 2026\tp final integrador juego de torres\gestorarchivos.cpp
+	"GestorArchivos.h"
+	<fstream>
+
+1795040288 c:\users\mateo\documents\programacion 2 2026\tp final integrador juego de torres\gestorarchivos.h
+	<string>
+	<vector>
+	"Jugador.h"
+	"Partida.h"
+	"Oleada.h"
+	"DefensaColocada.h"
+	"Enemigo.h"
+	"Evento.h"
+
+1795041864 c:\users\mateo\documents\programacion 2 2026\tp final integrador juego de torres\partida.h
+	<string>
+	<vector>
+	<chrono>
+	"Fortaleza.h"
+	"DefensaColocada.h"
+	"Oleada.h"
+
+1795040332 c:\users\mateo\documents\programacion 2 2026\tp final integrador juego de torres\oleada.h
+	<vector>
+
+1795040292 source:c:\users\mateo\documents\programacion 2 2026\tp final integrador juego de torres\ingresojugador.cpp
+	"IngresoJugador.h"
+	"ArchivoJugadores.h"
+	<iostream>
+	<string>
+
+1795040295 c:\users\mateo\documents\programacion 2 2026\tp final integrador juego de torres\ingresojugador.h
+	"Jugador.h"
+
+1795040307 source:c:\users\mateo\documents\programacion 2 2026\tp final integrador juego de torres\juego (1).cpp
+	"Juego.h"
+	<iostream>
+
+1795040310 c:\users\mateo\documents\programacion 2 2026\tp final integrador juego de torres\juego.h
+	"Jugador.h"
+	"Partida.h"
+
+1795040315 source:c:\users\mateo\documents\programacion 2 2026\tp final integrador juego de torres\jugador.cpp
+	"Jugador.h"
+	<iostream>
+
+1795042670 source:c:\users\mateo\documents\programacion 2 2026\tp final integrador juego de torres\main.cpp
+	<iostream>
+	<chrono>
+	<windows.h>
+	<unistd.h>
+	"Partida.h"
+	"IngresoJugador.h"
+	"ArchivoJugadores.h"
+	"TORRES.h"
+	"Muralla.h"
+	"ArchivoPartidas.h"
+
+1795040338 c:\users\mateo\documents\programacion 2 2026\tp final integrador juego de torres\torres.h
+	"Defensa.h"
+
+1795040325 c:\users\mateo\documents\programacion 2 2026\tp final integrador juego de torres\muralla.h
+	"Defensa.h"
+
+1795040321 source:c:\users\mateo\documents\programacion 2 2026\tp final integrador juego de torres\muralla.cpp
+	"Muralla.h"
+	"Fortaleza.h"
+
+1795040329 source:c:\users\mateo\documents\programacion 2 2026\tp final integrador juego de torres\oleada.cpp
+	"Oleada.h"
+	"Enemigo.h"
+	"ENEMIGOS.h"
+
+1795042670 source:c:\users\mateo\documents\programacion 2 2026\tp final integrador juego de torres\partida.cpp
+	"Partida.h"
+	"Defensa.h"
+	"Enemigo.h"
+	"Muralla.h"
+	"ArchivoPartidas.h"
+	"TORRES.h"
+	<iostream>
+	<cmath>
+
+1795040335 source:c:\users\mateo\documents\programacion 2 2026\tp final integrador juego de torres\torres.cpp
+	<iostream>
+	"TORRES.h"
+
