@@ -23,7 +23,7 @@ Partida::Partida()
       oleadaIniciada(false),
       ultimaActualizacion(std::chrono::steady_clock::now()) {
 
-    int cantidades[7] = {5, 8, 12, 16, 20, 25, 1};
+    int cantidades[7] = {5, 6, 6, 8, 8, 5, 1};
 
     for (int i = 0; i < 7; i++) {
         oleadas.emplace_back(i + 1, i + 1, cantidades[i]);
@@ -43,7 +43,7 @@ Partida::Partida(int id, int jugador, int dif)
       oleadaIniciada(false),
       ultimaActualizacion(std::chrono::steady_clock::now()) {
 
-    int cantidades[7] = {5, 8, 12, 16, 20, 25, 1};
+    int cantidades[7] = {5, 6, 6, 8, 8, 5, 1};
 
     for (int i = 0; i < 7; i++) {
         oleadas.emplace_back(i + 1, i + 1, cantidades[i]);
@@ -92,7 +92,7 @@ void Partida::actualizarPartida() {
     Oleada& oleada = oleadas[indiceOleada];
 
     // Generar enemigos progresivamente
-    oleada.actualizarApariciones();
+    oleada.actualizarApariciones(tiempoTranscurrido);
 
     const std::vector<Enemigo*>& enemigos = oleada.getEnemigos();
 
@@ -287,9 +287,9 @@ void Partida::avanzarDia() {
 
     diaActual++;
     indiceOleada++;
-    oleadaIniciada = false;
+    oleadaIniciada = false;   // la siguiente oleada empieza cuando el jugador lo decide
 
-    iniciarOleada();
+    agregarDinero(40);        // bonus por sobrevivir el dia
 }
 
 // CONSTRUIR DEFENSA
@@ -319,11 +319,23 @@ void Partida::construirDefensa(Defensa* d, int p) {
 
 // MEJORAR DEFENSA
 
-void Partida::mejorarDefensa(int i) {
+// Costo de mejora: la mitad del costo de la defensa. Nivel maximo: 3
+bool Partida::mejorarDefensa(int i) {
 
-    if (i >= 0 && i < (int)defensas.size()) {
-        defensas[i].mejorarNivel();
+    if (i < 0 || i >= (int)defensas.size()) {
+        return false;
     }
+
+    Defensa* d = defensas[i].getDefensa();
+    int costoMejora = d->getCosto() / 2;
+
+    if (d->getNivel() >= 3 || d->getCosto() == 0 || dinero < costoMejora) {
+        return false;
+    }
+
+    dinero -= costoMejora;
+    defensas[i].mejorarNivel();
+    return true;
 }
 
 // CANTIDAD Y LISTADO DE DEFENSAS
@@ -341,7 +353,9 @@ void Partida::mostrarDefensas() const {
         Defensa* d = defensas[i].getDefensa();
         std::cout << i + 1 << ". " << d->getNombre()
                   << " | nivel " << d->getNivel()
-                  << " | posicion " << defensas[i].getPosicion() << std::endl;
+                  << " | posicion " << defensas[i].getPosicion()
+                  << " | mejora: " << (d->getNivel() >= 3 ? std::string("nivel maximo") : std::to_string(d->getCosto() / 2) + " oro")
+                  << std::endl;
     }
 }
 
@@ -360,12 +374,15 @@ void Partida::verRecursos() const {
 
 // REPARAR FORTALEZA
 
-void Partida::repararFortaleza() {
+bool Partida::repararFortaleza() {
 
-    if (dinero >= 25) {
-        dinero -= 25;
-        fortaleza.reparar();
+    if (dinero < 30 || fortaleza.getResistencia() >= fortaleza.getResistenciaMaxima()) {
+        return false;
     }
+
+    dinero -= 30;
+    fortaleza.reparar();
+    return true;
 }
 
 // GUARDAR PARTIDA
