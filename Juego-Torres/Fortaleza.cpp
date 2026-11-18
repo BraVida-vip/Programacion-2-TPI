@@ -1,5 +1,5 @@
 #include "Fortaleza.h"
-Fortaleza::Fortaleza() : resistencia(100), resistenciaMaxima(100) {}
+Fortaleza::Fortaleza() : resistencia(1000), resistenciaMaxima(1000) {}
 Fortaleza::Fortaleza(int max) : resistencia(max), resistenciaMaxima(max) {}
 void Fortaleza::recibirDano(int c) { if (c > 0) { resistencia -= c; if (resistencia < 0) resistencia = 0; } }
 void Fortaleza::reparar() { resistencia = resistenciaMaxima; }
