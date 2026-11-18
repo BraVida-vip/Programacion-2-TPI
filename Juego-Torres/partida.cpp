@@ -3,9 +3,7 @@
 #include "Enemigo.h"
 #include "Muralla.h"
 
-#include "TorreArquera.h"
-#include "TorreFuego.h"
-#include "TorreHielo.h"
+#include "TORRES.h"
 
 #include <iostream>
 #include <cmath>
@@ -25,7 +23,7 @@ Partida::Partida()
       oleadaIniciada(false),
       ultimaActualizacion(std::chrono::steady_clock::now()) {
 
-    int cantidades[7] = {5, 8, 12, 16, 20, 25, 8};
+    int cantidades[7] = {5, 8, 12, 16, 20, 25, 1};
 
     for (int i = 0; i < 7; i++) {
         oleadas.emplace_back(i + 1, i + 1, cantidades[i]);
@@ -45,7 +43,7 @@ Partida::Partida(int id, int jugador, int dif)
       oleadaIniciada(false),
       ultimaActualizacion(std::chrono::steady_clock::now()) {
 
-    int cantidades[7] = {5, 8, 12, 16, 20, 25, 8};
+    int cantidades[7] = {5, 8, 12, 16, 20, 25, 1};
 
     for (int i = 0; i < 7; i++) {
         oleadas.emplace_back(i + 1, i + 1, cantidades[i]);
@@ -325,6 +323,25 @@ void Partida::mejorarDefensa(int i) {
 
     if (i >= 0 && i < (int)defensas.size()) {
         defensas[i].mejorarNivel();
+    }
+}
+
+// CANTIDAD Y LISTADO DE DEFENSAS
+
+int Partida::getCantidadDefensas() const {
+    return (int)defensas.size();
+}
+
+void Partida::mostrarDefensas() const {
+    if (defensas.empty()) {
+        std::cout << "No hay defensas construidas." << std::endl;
+        return;
+    }
+    for (int i = 0; i < (int)defensas.size(); i++) {
+        Defensa* d = defensas[i].getDefensa();
+        std::cout << i + 1 << ". " << d->getNombre()
+                  << " | nivel " << d->getNivel()
+                  << " | posicion " << defensas[i].getPosicion() << std::endl;
     }
 }
 
