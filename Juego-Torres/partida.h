@@ -37,12 +37,12 @@ public:
     void avanzarDia();
 
     void construirDefensa(Defensa* defensa, int posicion);
-    void mejorarDefensa(int indice);
+    bool mejorarDefensa(int indice);
     int  getCantidadDefensas() const;
     void mostrarDefensas() const;
 
     void verRecursos() const;
-    void repararFortaleza();
+    bool repararFortaleza();
     void guardarPartida() const;
 
     void agregarOleada(const Oleada& oleada);
