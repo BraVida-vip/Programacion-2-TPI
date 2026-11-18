@@ -38,6 +38,8 @@ public:
 
     void construirDefensa(Defensa* defensa, int posicion);
     void mejorarDefensa(int indice);
+    int  getCantidadDefensas() const;
+    void mostrarDefensas() const;
 
     void verRecursos() const;
     void repararFortaleza();
