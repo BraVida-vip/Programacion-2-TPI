@@ -30,7 +30,7 @@ Defensa::Defensa(int id, const std::string& n, int t, int d,
 
 void Defensa::mejorar() {
     ++nivel;
-    dano += 5;
+    dano += dano / 4;   // +25% de dano por nivel
 }
 
 int Defensa::getIdTorre() const {
