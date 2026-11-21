@@ -6,9 +6,15 @@ class Juego {
 private:
     Jugador jugadorActual;
     Partida partidaActual;
+    void menuPartida();
+    void elegirJugador();
+    void registrarJugador();
     void mostrarMenu();
     void mostrarEstadisticas();
     void mostrarCreditos();
+    void construirDefensa();
+    void iniciarOleada();
+    void guardarEstadisticas();
 public:
     Juego();
     void iniciarPartida();
