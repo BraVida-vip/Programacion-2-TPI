@@ -10,7 +10,6 @@ public:
     string getTipo() const override;
     void dispararRapido();
 };
-
 class TorreFuego : public Defensa {
 public:
     TorreFuego();
@@ -29,3 +28,4 @@ public:
     void ralentizarEnemigo();
 };
 #endif
+
