@@ -60,3 +60,4 @@ Orco::Orco(int id)
     : Enemigo(id, "Orco", 0, 3000, 50, 1, 0.7f, 35, 1) {}
 
 void Orco::atacar() {}
+
