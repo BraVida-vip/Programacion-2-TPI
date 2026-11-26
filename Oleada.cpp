@@ -1,7 +1,7 @@
 #include "Oleada.h"
 #include "Enemigo.h"
 #include "ENEMIGOS.h"
-
+using namespace std;
 Oleada::Oleada() : idOleada(0), dia(0), cantidadEnemigos(0), idEnemigo(0), cantidadActivos(0), tiempoAcumulado(0) {}
 Oleada::Oleada(int id, int d, int c, int ie) : idOleada(id), dia(d), cantidadEnemigos(c), idEnemigo(ie), cantidadActivos(0), tiempoAcumulado(0) {}
 
@@ -49,7 +49,7 @@ void Oleada::generarEnemigos() {
 
 bool Oleada::estaCompleta() const { for (auto e : enemigos) if (e && !e->fueEliminado()) return false; return true; }
 void Oleada::agregarEnemigo(Enemigo* e) { if (e) enemigos.push_back(e); }
-const std::vector<Enemigo*>& Oleada::getEnemigos() const { return enemigos; }
+const vector<Enemigo*>& Oleada::getEnemigos() const { return enemigos; }
 // Sale un enemigo nuevo por cada segundo transcurrido
 void Oleada::actualizarApariciones(float tiempo) {
     tiempoAcumulado += tiempo;
@@ -59,3 +59,17 @@ void Oleada::actualizarApariciones(float tiempo) {
     }
 }
 int Oleada::getCantidadActivos() const { return cantidadActivos; }
+
+void Oleada::liberarEnemigos() {
+
+    for (int i = 0; i < (int)enemigos.size(); i++) {
+
+        delete enemigos[i];
+        enemigos[i] = nullptr;
+    }
+
+    enemigos.clear();
+
+    cantidadActivos = 0;
+    tiempoAcumulado = 0.0f;
+}
