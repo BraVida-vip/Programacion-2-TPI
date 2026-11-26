@@ -7,7 +7,6 @@ private:
     char nombreArchivo[30];
 public:
     ArchivoJugadores(const char* nombre = "Jugadores.dat");
-
     bool agregarRegistro(const Jugador& reg);
     bool modificarRegistro(const Jugador& reg, int pos);
     Jugador leerRegistro(int pos);
