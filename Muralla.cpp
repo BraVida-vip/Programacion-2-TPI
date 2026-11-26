@@ -1,6 +1,6 @@
 #include "Muralla.h"
 #include "Fortaleza.h"
-
+using namespace std;
 Muralla::Muralla()
     : Defensa(0, "Muralla", 3, 0, 0, 0.0f, 75, 1) {}
 
@@ -9,7 +9,7 @@ Muralla::Muralla(int id)
 
 void Muralla::atacar() {}
 
-std::string Muralla::getTipo() const {
+string Muralla::getTipo() const {
     return "Muralla";
 }
 
