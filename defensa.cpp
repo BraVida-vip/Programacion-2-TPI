@@ -1,5 +1,5 @@
 #include "Defensa.h"
-
+using namespace std;
 Defensa::Defensa()
     : idTorre(0),
       tipo(0),
@@ -10,11 +10,8 @@ Defensa::Defensa()
       nivel(1),
       eliminado(false),
       ultimoAtaque(std::chrono::steady_clock::now()),
-      desactivada(false) {
-}
-
-Defensa::Defensa(int id, const std::string& n, int t, int d,
-                 int a, float v, int c, int ni)
+      desactivada(false) {}
+Defensa::Defensa(int id, const std::string& n, int t, int d,int a, float v, int c, int ni)
     : idTorre(id),
       nombre(n),
       tipo(t),
@@ -25,74 +22,46 @@ Defensa::Defensa(int id, const std::string& n, int t, int d,
       nivel(ni),
       eliminado(false),
       ultimoAtaque(std::chrono::steady_clock::now()),
-      desactivada(false) {
-}
-
+      desactivada(false) {}
 void Defensa::mejorar() {
     ++nivel;
     dano += dano / 4;   // +25% de dano por nivel
-}
-
+    }
 int Defensa::getIdTorre() const {
-    return idTorre;
-}
-
-std::string Defensa::getNombre() const {
-    return nombre;
-}
-
-int Defensa::getDano() const {
+    return idTorre;}
+    string Defensa::getNombre() const {
+    return nombre;}
+    int Defensa::getDano() const {
     return dano;
 }
-
 int Defensa::getAlcance() const {
     return alcance;
 }
-
 int Defensa::getCosto() const {
     return costo;
 }
 
 int Defensa::getNivel() const {
-    return nivel;
-}
-
+    return nivel;}
 float Defensa::getVelocidadAtaque() const {
-    return velocidadAtaque;
-}
-
+    return velocidadAtaque;}
 bool Defensa::estaEliminada() const {
-    return eliminado;
-}
-
+    return eliminado;}
 bool Defensa::estaDesactivada() const {
-    return desactivada;
-}
+    return desactivada;}
 
 void Defensa::setEliminada(bool v) {
-    eliminado = v;
-}
-
+    eliminado = v;}
 void Defensa::setDesactivada(bool v) {
-    desactivada = v;
-}
-
+    desactivada = v;}
 bool Defensa::puedeAtacar() const {
-
     if (eliminado || desactivada || velocidadAtaque <= 0) {
-        return false;
-    }
-
-    auto ahora = std::chrono::steady_clock::now();
-
+    return false;}
+    auto ahora = chrono::steady_clock::now();
     float tiempoTranscurrido =
-        std::chrono::duration<float>(ahora - ultimoAtaque).count();
-
+    chrono::duration<float>(ahora - ultimoAtaque).count();
     float intervalo = 1.0f / velocidadAtaque;
-
-    return tiempoTranscurrido >= intervalo;
-}
-
+    return tiempoTranscurrido >= intervalo;}
 void Defensa::registrarAtaque() {
-    ultimoAtaque = std::chrono::steady_clock::now();
+    ultimoAtaque = chrono::steady_clock::now();
 }
