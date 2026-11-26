@@ -13,7 +13,7 @@ void Fortaleza::aumentarResistencia(int cantidad) {
         resistencia += cantidad;
     }
 }
-///Este método nos permite recuperar la resistencia exacta que tenía la fortaleza cuando guardamos la partida.
+///Este mÃ©todo nos permite recuperar la resistencia exacta que tenÃ­a la fortaleza cuando guardamos la partida.
 void Fortaleza::restaurar(int actual, int maximo) {
     resistenciaMaxima = maximo;
 
