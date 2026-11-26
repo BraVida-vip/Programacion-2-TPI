@@ -33,17 +33,3 @@ string TorreHielo::getTipo() const {
 
 void TorreHielo::ralentizarEnemigo() {
     atacar();}
-
-
-// TORRE HIELO
-TorreHielo::TorreHielo():Defensa(0, "TorreHielo", 2, 100, 3, 1.0f, 70, 1) {}
-
-TorreHielo::TorreHielo(int id): Defensa(id, "TorreHielo", 2, 100, 3, 1.0f, 70, 1) {}
-
-void TorreHielo::atacar() {}
-
-string TorreHielo::getTipo() const {
-    return "TorreHielo";}
-
-void TorreHielo::ralentizarEnemigo() {
-    atacar();}
